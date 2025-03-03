@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt - Helmut Hammermeister</title>
+  <style>
+    /* Allgemeine Reset-Regeln */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+    
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+    
+    /* Navigationsleiste */
+    nav {
+      background-color: #333;
+      color: #fff;
+    }
+    
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 10px 0;
+    }
+    
+    nav ul li {
+      margin: 0 20px;
+    }
+    
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.1em;
+      transition: color 0.1s, background-color 0.1s;
+      padding: 5px 10px;
+      border-radius: 10px;
+    }
+    
+    nav ul li a:hover {
+      color: #ddd;
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+    
+    /* Header-Bereich */
+    header {
+      background: url('contact-header.jpg') no-repeat center center/cover;
+      height: 10vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #333;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+      text-align: center;
+      padding: 0 10px;
+    }
+    
+    header h1 {
+      font-size: 2.5em;
+    }
+    
+    /* Visitenkarten-Bild */
+    .contact-image {
+      text-align: center;
+      margin: 20px 0;
+    }
+    
+    .contact-image img {
+      width: 400px;
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    
+    /* Kontaktinformationen */
+    .contact-info {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      margin: 40px 0;
+    }
+    
+    .contact-info h2 {
+      margin-bottom: 20px;
+    }
+    
+    .contact-info p {
+      margin-bottom: 15px;
+      font-size: 1.1em;
+    }
+    
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+    }
+    
+    /* Responsive Anpassungen für Portrait */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        padding: 10px 0;
+      }
+      
+      nav ul li {
+        margin: 10px 0;
+      }
+      
+      header {
+        height: 15vh;
+      }
+      
+      header h1 {
+        font-size: 1.8em;
+      }
+      
+      .contact-info p {
+        font-size: 1em;
+      }
+    }
+    
+    /* Zusätzliche Anpassungen für Mobilgeräte im Querformat */
+    @media (max-width: 768px) and (orientation: landscape) {
+      header {
+        height: 12vh;
+      }
+      
+      header h1 {
+        font-size: 1.6em;
+      }
+      
+      .contact-info p {
+        font-size: 0.9em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <ul class="container">
+      <li><a href="index.html">Startseite</a></li>
+      <li><a href="galerie.html">Galerie</a></li>
+      <li><a href="profil.html">Über den Künstler</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+  </nav>
+  
+  <!-- Header -->
+  <header>
+    <h1>Kontakt</h1>
+  </header>
+  
+  <!-- Visitenkarten-Bild -->
+  <div class="contact-image">
+    <img src="img/Helmut Hammermeister Visitenkarte.jpg" alt="Visitenkarte von Helmut Hammermeister">
+  </div>
+  
+  <!-- Kontaktinformationen -->
+  <section class="container">
+    <div class="contact-info">
+      <h2>Kontaktinformationen</h2>
+      <p><strong>Name:</strong> Helmut Hammermeister</p>
+      <p><strong>E-Mail:</strong> hammermeisterhelmut294@gmail.com</p>
+      <p><strong>Telefon:</strong> +49 15772728202</p>
+      <p><strong>Adresse:</strong> Hauptstraße 30a, 53534 Hoffeld, Deutschland</p>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Helmut Hammermeister - Alle Rechte vorbehalten.</p>
+  </footer>
+</body>
+</html>
+
+
+

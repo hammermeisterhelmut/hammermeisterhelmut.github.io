@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Über den Künstler - Helmut Hammermeister</title>
+  <style>
+    /* Allgemeine Reset-Regeln */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+    
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+    
+    /* Navigationsleiste */
+    nav {
+      background-color: #333;
+      color: #fff;
+    }
+    
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 10px 0;
+    }
+    
+    nav ul li {
+      margin: 0 20px;
+    }
+    
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.1em;
+      transition: color 0.1s, background-color 0.1s;
+      padding: 5px 10px;
+      border-radius: 10px;
+    }
+    
+    nav ul li a:hover {
+      color: #ddd;
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+    
+    /* Header-Bereich */
+    header {
+      background: url('about-header.jpg') no-repeat center center/cover;
+      height: 10vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #333;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+      margin: 20px 0 -10px 0;
+      text-align: center;
+      padding: 0 10px;
+    }
+    
+    header h1 {
+      font-size: 2.5em;
+    }
+    
+    /* Profil-Bereich: Flex-Container für Bild und Text */
+    .profile-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+      margin: 40px 0;
+    }
+    
+    /* Bild-Container */
+    .profile-img {
+      flex: 0 0 auto;
+      text-align: center;
+    }
+    
+    .profile-img img {
+      max-width: 300px;
+      width: 100%;
+      border-radius: 8px;
+      margin-right: 60px;
+    }
+    
+    /* Text-Container */
+    .bio {
+      flex: 1;
+      max-width: 600px;
+      text-align: left;
+    }
+    
+    .bio h2 {
+      margin-bottom: 20px;
+      font-size: 2em;
+    }
+    
+    .bio p {
+      margin-bottom: 15px;
+      text-align: justify;
+    }
+    
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+    }
+    
+    /* Responsive Anpassungen für Portrait */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        padding: 10px 0;
+      }
+      
+      nav ul li {
+        margin: 10px 0;
+      }
+      
+      header {
+        height: 15vh;
+      }
+      
+      header h1 {
+        font-size: 1.8em;
+      }
+      
+      .profile-wrapper {
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      .profile-img img {
+        margin: 0 0 20px 0;
+      }
+      
+      .bio {
+        text-align: left;
+      }
+      
+      .bio h2 {
+        font-size: 1.8em;
+      }
+      
+      .bio p {
+        font-size: 1em;
+      }
+    }
+    
+    /* Zusätzliche Anpassungen für Mobilgeräte im Querformat */
+    @media (max-width: 768px) and (orientation: landscape) {
+      header {
+        height: 12vh;
+      }
+      
+      header h1 {
+        font-size: 1.6em;
+      }
+      
+      .bio h2 {
+        font-size: 1.6em;
+      }
+      
+      .bio p {
+        font-size: 0.9em;
+      }
+      
+      /* Bei Querformat entfällt der große rechte Abstand im Bild */
+      .profile-img img {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <ul class="container">
+      <li><a href="index.html">Startseite</a></li>
+      <li><a href="galerie.html">Galerie</a></li>
+      <li><a href="profil.html">Über den Künstler</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+  </nav>
+  
+  <!-- Header -->
+  <header>
+    <h1>Helmut Hammermeister – Künstlerischer Werdegang und berufliche Stationen</h1>
+  </header>
+  
+  <!-- Profil-Bereich: Bild links, Text rechts -->
+  <div class="container">
+    <div class="profile-wrapper">
+      <div class="profile-img">
+        <a href="img/Helmut Hammermeister/Portrait.jpg">
+          <img src="img/Helmut Hammermeister/Portrait.jpg" alt="Portrait des Künstlers">
+        </a>
+      </div>
+      <div class="bio">
+        <h2>Helmut Hammermeister – Ein moderner Künstler</h2>
+        <p>Helmut Hammermeister wurde 1951 in Coesfeld, Westfalen, geboren und entdeckte früh seine Leidenschaft für kreative und technische Gestaltung. Seine berufliche Laufbahn begann 1968 mit einer Ausbildung zum Glasschleifer an der staatlichen Glasfachschule in Rheinbach. Dort erlernte er nicht nur die handwerklichen Fertigkeiten der Glasbearbeitung, sondern vertiefte auch seine Kenntnisse in Entwurfszeichnen, technischem Zeichnen und Malerei.</p>
+        <p>Nach einer praktischen Tätigkeit als Glasschleifer folgte 1972 eine weitere Ausbildung zum Technischen Zeichner mit der Fachrichtung „Energie“ sowie Tief- und Hochbau. Parallel dazu begann seine berufliche Tätigkeit bei der Stadt Euskirchen im Bereich der Wasserversorgung sowie des Hoch- und Tiefbaus. Zu seinen Aufgaben gehörten die Erstellung von Planungsunterlagen, grafische Darstellungen zur Wassergewinnung und -verteilung sowie die Anfertigung von Broschüren zum Versorgungsbereich Wasser.</p>
+        <p>Ab 1982 arbeitete Helmut Hammermeister als freiberuflicher Planer im Hochbau. In dieser Zeit widmete er sich insbesondere der Gestaltung und Planung von Einfamilienhäusern sowie der Restaurierung denkmalgeschützter Objekte.</p>
+        <p>2001/02 kehrte er verstärkt zu seinen künstlerischen Wurzeln zurück und nahm den Kontakt zur Malschule Ralf Evertz in Mahlberg auf. Seitdem widmet er sich erneut der Kunst und verbindet in seinen Werken technisches Verständnis mit künstlerischem Ausdruck.</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Helmut Hammermeister - Alle Rechte vorbehalten.</p>
+  </footer>
+</body>
+</html>

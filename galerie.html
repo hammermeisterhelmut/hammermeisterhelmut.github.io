@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galerie - Helmut Hammermeister</title>
+  <style>
+    /* Allgemeine Reset-Regeln */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+    
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+    
+    /* Navigationsleiste */
+    nav {
+      background-color: #333;
+      color: #fff;
+    }
+    
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 10px 0;
+    }
+    
+    nav ul li {
+      margin: 0 20px;
+    }
+    
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.1em;
+      transition: color 0.1s, background-color 0.1s;
+      padding: 5px 10px;
+      border-radius: 10px;
+    }
+    
+    nav ul li a:hover {
+      color: #ddd;
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+    
+    /* Header-Bereich */
+    header {
+      background: url('gallery-header.jpg') no-repeat center center/cover;
+      height: 15vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #333;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+      text-align: center;
+      padding: 0 10px;
+    }
+    
+    header h1 {
+      font-size: 2.5em;
+    }
+    
+    /* Galerie-Bereich */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 30px;
+      margin: 30px 0;
+    }
+    
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+    
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+    }
+    
+    /* Responsive Anpassungen für Portrait */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        padding: 10px 0;
+      }
+      
+      nav ul li {
+        margin: 10px 0;
+      }
+      
+      header {
+        height: 20vh;
+      }
+      
+      header h1 {
+        font-size: 2em;
+      }
+      
+      .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+      }
+    }
+    
+    /* Zusätzliche Anpassungen für Mobilgeräte im Querformat */
+    @media (max-width: 768px) and (orientation: landscape) {
+      header {
+        height: 18vh;
+      }
+      
+      header h1 {
+        font-size: 2em;
+      }
+      
+      .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <ul class="container">
+      <li><a href="index.html">Startseite</a></li>
+      <li><a href="galerie.html">Galerie</a></li>
+      <li><a href="profil.html">Über den Künstler</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+  </nav>
+  
+  <!-- Header -->
+  <header style="margin: 0 0 -30px 0;">
+    <h1>Galerie</h1>
+  </header>
+  
+  <!-- Galerie -->
+  <section class="container">
+    <div class="gallery">
+      <a href="img/galerie/002.jpg"><img src="img/galerie/002.jpg" alt="Kunstwerke 1"></a>
+      <a href="img/galerie/003.jpg"><img src="img/galerie/003.jpg" alt="Kunstwerk 2"></a>
+      <a href="img/galerie/004.jpg"><img src="img/galerie/004.jpg" alt="Kunstwerk 3"></a>
+      <a href="img/galerie/005.jpg"><img src="img/galerie/005.jpg" alt="Kunstwerk 4"></a>
+      <a href="img/galerie/006.jpg"><img src="img/galerie/006.jpg" alt="Kunstwerk 5"></a>
+      <a href="img/galerie/007.jpg"><img src="img/galerie/007.jpg" alt="Kunstwerk 6"></a>
+      <a href="img/galerie/008.jpg"><img src="img/galerie/008.jpg" alt="Kunstwerk 7"></a>
+      <a href="img/galerie/009.jpg"><img src="img/galerie/009.jpg" alt="Kunstwerk 8"></a>
+      <a href="img/galerie/010.jpg"><img src="img/galerie/010.jpg" alt="Kunstwerk 9"></a>
+      <a href="img/galerie/011.jpg"><img src="img/galerie/011.jpg" alt="Kunstwerk 10"></a>
+      <a href="img/galerie/012.jpg"><img src="img/galerie/012.jpg" alt="Kunstwerk 12"></a>
+      <!-- Weitere Kunstwerke können hier hinzugefügt werden -->
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Helmut Hammermeister - Alle Rechte vorbehalten.</p>
+  </footer>
+</body>
+</html>
+
