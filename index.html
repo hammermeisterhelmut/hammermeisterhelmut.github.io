@@ -31,7 +31,7 @@
       background-color: #333;
       color: #fff;
       position: relative;
-      z-index: 1000; /* Navigation bleibt grundsätzlich im Vordergrund */
+      z-index: 1000;
     }
     
     nav ul {
@@ -72,7 +72,7 @@
       position: relative;
       text-align: center;
       padding: 0 10px;
-      margin: 20px 0 0 0; /* kein negativer Rand */
+      margin: 20px 0 0 0;
     }
     
     header h1 {
@@ -207,38 +207,31 @@
       background-color: rgba(0,0,0,0.8);
     }
     
-    /* Responsive Anpassungen */
+    /* Responsive Anpassungen für Portrait */
     @media (max-width: 768px) {
       nav ul {
         flex-direction: column;
         padding: 10px 0;
       }
-      
       nav ul li {
         margin: 10px 0;
       }
-      
       header {
         height: 40vh;
       }
-      
       header h1 {
         font-size: 2.5em;
       }
-      
       header p {
         font-size: 1.2em;
       }
-      
       .card img {
         height: 250px;
       }
-      
       .quote {
         font-size: 1.3em;
         padding: 30px 10px;
       }
-      
       .testimonials {
         padding: 30px 10px;
         margin: 40px auto;
@@ -247,30 +240,32 @@
     
     /* Zusätzliche Anpassungen für Querformat auf Mobilgeräten */
     @media (max-width: 768px) and (orientation: landscape) {
-      /* Erhöhe den Abstand zum oberen Rand, damit der Header nicht von der Navigation verdeckt wird */
+      /* Navigationsleiste fixieren */
+      nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+      }
+      /* Genügend Abstand vom fixierten Nav */
       header {
-        margin-top: 120px;
+        margin-top: 80px; /* nav-Höhe einplanen */
         height: 30vh;
       }
-      
       header h1 {
         font-size: 2.2em;
       }
-      
       header p {
         font-size: 1em;
       }
-      
       .quote {
         font-size: 1.2em;
         padding: 20px 10px;
       }
-      
       .testimonials {
         padding: 20px 10px;
         margin: 20px auto;
       }
-      
       .overview {
         gap: 30px;
       }
@@ -362,6 +357,7 @@
   </footer>
 </body>
 </html>
+
 
 
 
