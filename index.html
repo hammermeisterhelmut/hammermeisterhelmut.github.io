@@ -31,7 +31,7 @@
       background-color: #333;
       color: #fff;
       position: relative;
-      z-index: 1000;
+      z-index: 1000; /* bleibt grundsätzlich im Vordergrund */
     }
     
     nav ul {
@@ -240,16 +240,19 @@
     
     /* Zusätzliche Anpassungen für Querformat auf Mobilgeräten */
     @media (max-width: 768px) and (orientation: landscape) {
-      /* Navigationsleiste fixieren */
       nav {
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
       }
-      /* Genügend Abstand vom fixierten Nav */
+      /* Füge dem Body zusätzliches Padding hinzu, damit der Inhalt nicht hinter der fixierten Navigation verschwindet */
+      body {
+        padding-top: 80px;
+      }
+      /* Entferne das zusätzliche margin-top im Header, da das Body-Padding bereits für Abstand sorgt */
       header {
-        margin-top: 80px; /* nav-Höhe einplanen */
+        margin-top: 0;
         height: 30vh;
       }
       header h1 {
@@ -357,6 +360,7 @@
   </footer>
 </body>
 </html>
+
 
 
 
