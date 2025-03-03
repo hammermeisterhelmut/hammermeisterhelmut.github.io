@@ -31,7 +31,7 @@
       background-color: #333;
       color: #fff;
       position: relative;
-      z-index: 1000; /* sorgt dafür, dass die Navigation grundsätzlich im Vordergrund bleibt */
+      z-index: 1000; /* Navigation bleibt grundsätzlich im Vordergrund */
     }
     
     nav ul {
@@ -247,9 +247,9 @@
     
     /* Zusätzliche Anpassungen für Querformat auf Mobilgeräten */
     @media (max-width: 768px) and (orientation: landscape) {
-      /* Füge zusätzlichen Abstand oben ein, damit der Header nicht von der Navigation überlappt wird */
+      /* Erhöhe den Abstand zum oberen Rand, damit der Header nicht von der Navigation verdeckt wird */
       header {
-        margin-top: 80px;
+        margin-top: 120px;
         height: 30vh;
       }
       
@@ -362,5 +362,6 @@
   </footer>
 </body>
 </html>
+
 
 
